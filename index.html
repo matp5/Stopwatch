@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Stoper</title>
+    <link rel="stylesheet" href="css/main.css">
+   <link rel="stylesheet" href="css/stoper.css">
+   <link rel="stylesheet" href="css/timer.css">
+   <meta name="viewport" content="width=device-width, initial-scale=0.7">
+</head>
+<body>
+    <div class='container'>
+        <div class='buttons'>
+            <button class='buttons__stoper' >Stopwatch</button>
+            <button class='buttons__timer' >Timer</button>
+        </div>
+        <div class="stoper">
+            <div class="stoper__btns">
+                <button class='stoper__start'>START</button>
+                <button class='stoper__stop'>STOP</button>
+                <button class='stoper__reset'>RESET</button>
+                <button class='stoper__lap'>LAP</button>
+                <button class='stoper__clear'>CLEAR</button>
+            </div>
+            <div class='stoper__info'>
+                <span class='stoper__minutes'>00</span>
+                <span class='stoper__seconds'>00</span>
+                <span class='stoper__milseconds'>00</span>
+            </div>
+            <div class='stoper__lapInfo'>
+                <ul class='stoper__laps'></ul>
+            </div>
+        </div>
+
+        <div class='timer'>
+            <div class='timer__times'><span class='timer__inputData'>Hours: </span>
+                <input id="inputHour" class='timer__hours' value='00' type="number" min='0'/> 
+            </div>
+
+            <div class='timer__times'> <span class='timer__inputData'>Minutes: </span>
+                <input id="inputMinutes" class='timer__mins' value='00' type="number"  min='0' max='59' /> 
+            </div>
+
+            <div class='timer__times'><span class='timer__inputData'>Seconds: </span>
+                <input id="inputSeconds" class='timer__secs' value='00' type="number" min='0' max='59' /> 
+            </div>
+            
+            <button class='timer__countBtn' onclick="setTime();">START</button>
+            <div id="timer" class='timer__count'>
+              <span id="hourCount">00</span>            
+              <span id="minuteCount">00</span>       
+              <span id="secondCount">00</span>
+            </div>
+        </div>
+
+    </div>
+    <script src='./js/buttons.js'></script>
+    <script src='./js/stoper.js'></script>
+    <script src='./js/timer.js'></script>
+</body>
+</html>
