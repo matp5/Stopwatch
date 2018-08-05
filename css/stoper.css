@@ -1,0 +1,44 @@
+.stoper__btns {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .stoper__btns button {
+    flex-grow: 1;
+    margin: 15px;
+    padding: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    font-weight: bolder;
+    color: black;
+    border: 2px solid black;
+    background: none;
+    letter-spacing: 5px;
+  }
+
+  .stoper__info {
+    font-size: 3em;
+    text-align: center;
+    margin-top: 40px;
+  }
+
+  .stoper__info :not(:nth-child(3)):after {
+    content: ' :';
+  }
+
+  @media only screen and (max-width: 640px) {
+    .stoper__info {
+      font-size: 2em;
+    }
+  }
+  .stoper__lapInfo {
+    padding: 10px;
+    font-size: 1.2em;
+  }
+  .stoper__laps {
+    list-style-type: none;
+    text-align: center;
+  }
+  .stoper__laps li {
+    padding: 5px;
+  }
+  

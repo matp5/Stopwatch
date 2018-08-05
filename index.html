@@ -11,10 +11,10 @@
 <body>
     <div class='container'>
         <div class='buttons'>
-            <button class='buttons__stoper' >Stopwatch</button>
-            <button class='buttons__timer' >Timer</button>
+            <button class='buttons__stoper btns' >Stopwatch</button>
+            <button class='buttons__timer btns' >Timer</button>
         </div>
-        <div class="stoper">
+        <div class="stoper" id='show_1'>
             <div class="stoper__btns">
                 <button class='stoper__start'>START</button>
                 <button class='stoper__stop'>STOP</button>
@@ -32,7 +32,7 @@
             </div>
         </div>
 
-        <div class='timer'>
+        <div class='timer' id='show_2'>
             <div class='timer__times'><span class='timer__inputData'>Hours: </span>
                 <input id="inputHour" class='timer__hours' value='00' type="number" min='0'/> 
             </div>
@@ -46,7 +46,7 @@
             </div>
             
             <button class='timer__countBtn' onclick="setTime();">START</button>
-            <div id="timer" class='timer__count'>
+            <div class='timer__count' id="timer" >
               <span id="hourCount">00</span>            
               <span id="minuteCount">00</span>       
               <span id="secondCount">00</span>
