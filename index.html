@@ -11,21 +11,21 @@
 <body>
     <div class='container'>
         <div class='buttons'>
-            <button class='buttons__stoper btns' >Stopwatch</button>
-            <button class='buttons__timer btns' >Timer</button>
+            <button class='buttons__stoper btns' onclick=hideShow(1)>Stopwatch</button>
+            <button class='buttons__timer btns' onclick=hideShow(2)>Timer</button>
         </div>
         <div class="stoper" id='show_1'>
             <div class="stoper__btns">
-                <button class='stoper__start'>START</button>
-                <button class='stoper__stop'>STOP</button>
-                <button class='stoper__reset'>RESET</button>
-                <button class='stoper__lap'>LAP</button>
-                <button class='stoper__clear'>CLEAR</button>
+                <button class='start'>START</button>
+                <button class='stop'>STOP</button>
+                <button class='reset'>RESET</button>
+                <button class='lap'>LAP</button>
+                <button class='clear'>CLEAR</button>
             </div>
             <div class='stoper__info'>
-                <span class='stoper__minutes'>00</span>
-                <span class='stoper__seconds'>00</span>
-                <span class='stoper__milseconds'>00</span>
+                <span class='minutes'>00</span>
+                <span class='seconds'>00</span>
+                <span class='milseconds'>00</span>
             </div>
             <div class='stoper__lapInfo'>
                 <ul class='stoper__laps'></ul>
@@ -54,8 +54,8 @@
         </div>
 
     </div>
-    <script src='./js/buttons.js'></script>
-    <script src='./js/stoper.js'></script>
-    <script src='./js/timer.js'></script>
+    <script src='js/buttons.js'></script>
+    <script src='js/stoper.js'></script>
+    <script src='js/timer.js'></script>
 </body>
 </html>
